@@ -41,7 +41,7 @@ class Day3 extends Day {
             const builtJoltage: number[] = [];
             let start = 0;
             // iteratively pick the best digit for each position
-            for (let remaining = k; remaining > 0; remaining--) {
+            for (let remaining = 12; remaining > 0; remaining--) {
                 // we can only pick from digits[start..end] where end leaves enough digits remaining
                 const end = digits.length - remaining; 
                 let bestDigit = -1;
